@@ -12,8 +12,10 @@ class Pemilihan2Percobaan1_23{
         if ((tahun % 4) == 0) {
             if((tahun % 100) != 0){
                 System.out.println("Tahun Kabisat");
+            }else if((tahun % 400) == 0){
+                System.out.println("Termasuk Tahun Kabisat");
             }else{
-                System.out.println("Tahun tidak kabisat");
+                System.out.println("Tahun tidak kabisa");
             }
         } else{
             System.out.println("Bukan Tahun Kabisat");
