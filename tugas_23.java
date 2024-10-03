@@ -25,7 +25,7 @@ public class tugas_23 {
             System.out.println("Total diskon: " +total_diskon);
             System.out.println("Total Bayar: " +total);
         }
-        else if (jns_bk.equalsIgnoreCase("kamus")) {
+        else if (jns_bk.equalsIgnoreCase("novel")) {
             diskon = 0.07;
             if (jml_buku > 3) {
                 diskon += 0.02;
