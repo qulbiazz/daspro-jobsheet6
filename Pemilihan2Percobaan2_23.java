@@ -18,10 +18,12 @@ public class Pemilihan2Percobaan2_23 {
 
         System.out.print("Masukkan angka dari menu yang dipilih: ");
         pilihan_menu = input.nextInt();
+        input.nextLine();
         System.out.print("Masukkan Jumlah Beli: ");
         jumlah_beli = input.nextInt();
+        input.nextLine();
         System.out.print("Apakah punya member (y / n)? = ");
-        member = input.next();
+        member = input.nextLine();
         System.out.print("Masukkan Metode Pembayaran (Tunai / QRIS): ");
         metode_pembayaran = input.next();
 
@@ -72,7 +74,7 @@ public class Pemilihan2Percobaan2_23 {
             System.out.println("Total Bayar: " + total_bayar);
 
             if (metode_pembayaran.equalsIgnoreCase("QRIS")) {
-                total_bayar -= 1000;
+                total_bayar -= potongan_QRIS;
                 System.out.println("Total Bayar QRIS: " + total_bayar);
             }
         }
